@@ -11,7 +11,7 @@
 
 //	...
 if(!function_exists('apcu_add') ){
-	throw new Exception("APCu has not been installed.");
+	OP\Notice::Set("APCu has not been installed.");
 }
 
 //	...
