@@ -7,3 +7,27 @@
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright Tomoaki Nagahara All right reserved.
  */
+
+/** namespace
+ *
+ */
+namespace OP;
+
+/** use
+ *
+ */
+
+/* @var $apcu UNIT\APCu */
+$apcu = Unit('APCu');
+
+//	...
+$key = 'count';
+
+//	...
+$val = $apcu->Get($key);
+
+//	...
+$apcu->Set($key, $val + 1);
+
+//	...
+D($val);
