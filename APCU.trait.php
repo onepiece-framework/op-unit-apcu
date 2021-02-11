@@ -1,10 +1,9 @@
 <?php
-/**
- * unit-apcu:/APCU.trait.php
+/** op-unit-apcu:/APCU.trait.php
  *
- * @creation  2020-02-18
+ * @created   2020-02-18
  * @version   1.0
- * @package   unit-apcu
+ * @package   op-unit-apcu
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright Tomoaki Nagahara All right reserved.
  */
@@ -16,7 +15,7 @@ namespace OP\UNIT;
 
 /** OP_UNIT_APCU
  *
- * @creation  2020-02-18
+ * @created   2020-02-18
  * @version   1.0
  * @package   unit-apcu
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
@@ -35,7 +34,6 @@ trait OP_UNIT_APCU
 
 	/** Generate hash key.
 	 *
-	 * @creation  2020-02-18
 	 * @param     string       $source
 	 * @return    string       $hashkey
 	 */
@@ -50,7 +48,6 @@ trait OP_UNIT_APCU
 
 	/** Get value.
 	 *
-	 * @creation  2020-02-18
 	 * @param     string       $key
 	 * @return    string       $value
 	 */
@@ -71,7 +68,6 @@ trait OP_UNIT_APCU
 
 	/** Set value.
 	 *
-	 * @creation  2020-02-18
 	 * @param     string       $key
 	 * @return    integer      $ttl
 	 */
