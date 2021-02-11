@@ -8,9 +8,14 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
+/** namespace
+ *
+ */
+namespace OP;
+
 //	...
 if(!function_exists('apcu_add') ){
-	OP\Notice::Set("APCu has not been installed.");
+	Notice::Set("APCu has not been installed.");
 }
 
 //	...
