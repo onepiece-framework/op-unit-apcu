@@ -20,7 +20,7 @@ use OP\OP_CORE;
 use OP\OP_UNIT;
 use OP\IF_UNIT;
 
-/** Apcu.class.php
+/** APCu.class.php
  *
  * @created   2020-02-18
  * @version   1.0
@@ -28,7 +28,7 @@ use OP\IF_UNIT;
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright Tomoaki Nagahara All right reserved.
  */
-class Apcu implements IF_UNIT
+class APCu implements IF_UNIT
 {
 	/** use
 	 *
