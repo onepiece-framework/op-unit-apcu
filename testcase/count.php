@@ -18,7 +18,7 @@ namespace OP;
  */
 
 /* @var $apcu UNIT\APCu */
-$apcu = Unit('APCu');
+$apcu = OP()->Unit('APCu');
 
 //	...
 $key = 'count';
