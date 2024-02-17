@@ -20,6 +20,11 @@ use OP\OP_CORE;
 use OP\OP_UNIT;
 use OP\IF_UNIT;
 
+/** include
+ *
+ */
+include_once(__DIR__.'/APCU.trait.php');
+
 /** APCu.class.php
  *
  * @created   2020-02-18
