@@ -16,8 +16,8 @@ namespace OP;
 //	...
 if(!function_exists('apcu_add') ){
 	Notice::Set("APCu has not been installed.");
+//	throw new \Exception("APCu php-module has not been installed.");
 }
 
 //	...
-include(__DIR__.'/APCU.trait.php');
-include(__DIR__.'/APCu.class.php');
+include_once(__DIR__.'/APCu.class.php');
