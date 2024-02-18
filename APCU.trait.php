@@ -46,6 +46,8 @@ trait OP_UNIT_APCU
 		//	...
 		if(!$salt = Config::Get('apcu')['salt'] ?? null ){
 			$salt = Env::AppID().', '.__CLASS__;
+			$salt = md5($salt);
+			$salt = substr($salt, 0, 10);
 		}
 
 		//	...
