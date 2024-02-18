@@ -21,6 +21,7 @@ namespace OP\UNIT;
 /** use
  *
  */
+use OP\OP_CI;
 use OP\OP_CORE;
 use OP\OP_UNIT;
 use OP\IF_UNIT;
@@ -43,5 +44,5 @@ class APCu implements IF_UNIT
 	/** use
 	 *
 	 */
-	use OP_CORE, OP_UNIT, OP_UNIT_APCU;
+	use OP_CORE, OP_UNIT, OP_CI, OP_UNIT_APCU;
 }
