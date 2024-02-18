@@ -76,21 +76,6 @@ trait OP_UNIT_APCU
 		return substr( md5($salt .', '. $key), 0, 10);
 	}
 
-	/** Get value.
-	 *
-	 * @created   2020-02-18
-	 * @param     string       $key
-	 * @return    mixed        $value
-	 */
-	static function Get(string $key)
-	{
-		//	...
-		$key = self::_ApcuHash($key);
-
-		//	...
-		return apcu_fetch($key);
-	}
-
 	/** Set value.
 	 *
 	 * @created   2020-02-18
@@ -112,5 +97,20 @@ trait OP_UNIT_APCU
 
 		//	...
 		return apcu_store($key, $val, $ttl);
+	}
+
+	/** Get value.
+	 *
+	 * @created   2020-02-18
+	 * @param     string       $key
+	 * @return    mixed        $value
+	 */
+	static function Get(string $key)
+	{
+		//	...
+		$key = self::_ApcuHash($key);
+
+		//	...
+		return apcu_fetch($key);
 	}
 }
