@@ -1,9 +1,9 @@
 <?php
-/** op-unit-model:/ci/APCu.php
+/** op-unit-apcu:/ci/APCu.php
  *
  * @created     2024-02-17
  * @version     1.0
- * @package     op-unit-model
+ * @package     op-unit-apcu
  * @author      Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright   Tomoaki Nagahara All right reserved.
  */
