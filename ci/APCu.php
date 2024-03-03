@@ -22,17 +22,19 @@ namespace OP;
 $ci = OP::Unit('CI');
 
 //	Template
-$result =  'Success!';
-$args   = ['ci.phtml',['arg1'=>'Success!']];
+$arg1   = 'foo';
+$arg2   = 'bar';
+$args   = ['ci.phtml',['arg1'=>$arg1, 'arg2'=>$arg2]];
+$result = $arg1 . $arg2;
 $ci->Set('Template', $result, $args);
 
 //	_ApcuSalt
-$result = 'CI1, OP\UNIT\APCu';
+$result = 'CI, OP\UNIT\APCu';
 $args   = null;
 $ci->Set('_ApcuSalt', $result, $args);
 
 //	_ApcuHash
-$result = '562c14e25b';
+$result = '7cd963e1c6';
 $args   = 'hash_key';
 $ci->Set('_ApcuHash', $result, $args);
 
